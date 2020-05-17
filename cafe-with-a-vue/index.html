@@ -17,6 +17,31 @@
 				est difficile de s'arrêter.
 			</p>
 
+			<section class="menu">
+				<h2>Menu</h2>
+				<div class="menu-item">
+					<img
+						class="menu-item__image"
+						src="https://via.placeholder.com/300x150"
+						alt=""
+					/>
+					<div>
+						<h3>Nom de l'article</h3>
+						<p>En stock</p>
+						<p>En rupture de stock</p>
+						<div>
+							<label for="add-item-quantity">Quantité :</label>
+							<input id="add-item-quantity" type="number" />
+							<button>Ajouter au panier d'achat</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<aside class="shopping-cart">
+				<h2>Panier d'achat: 0 articles</h2>
+			</aside>
+
 			<h2>Contactez nous</h2>
 			<p>Adresse : {{ address }}</p>
 			<p>Téléphone : {{ phone }}</p>
@@ -29,7 +54,7 @@
 			</ul>
 
 			<footer class="footer">
-				<p>{{ copyright }}</p>
+				<p>Copyright {{ restaurantName }} 2020</p>
 			</footer>
 		</div>
 
@@ -41,7 +66,36 @@
 					address: "18 avenue du Beurre, Paris, France",
 					email: "hello@cafewithavue.bakery",
 					phone: "01 88 88 88 88",
-					restaurantName: "La belle vue"
+					restaurantName: "La belle vue",
+					simpleMenu: [
+						{
+							name: "Croissant",
+							image: {
+								source: "./images/croissant.jpg",
+								alt: "Un croissant"
+							},
+							inStock: true,
+							quantity: 1
+						},
+						{
+							name: "Baguette de pain",
+							image: {
+								source: "./images/french-baguette.jpeg",
+								alt: "Quatre baguettes de pain"
+							},
+							inStock: true,
+							quantity: 1
+						},
+						{
+							name: "Éclair",
+							image: {
+								source: "./images/eclair.jpg",
+								alt: "Éclair au chocolat"
+							},
+							inStock: false,
+							quantity: 1
+						}
+					]
 				},
 				computed: {
 					copyright() {
