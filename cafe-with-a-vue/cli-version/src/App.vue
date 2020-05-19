@@ -22,7 +22,7 @@
 		</section>
 
 		<aside class="shopping-cart">
-			<h2>Panier d'achat : {{ shoppingCart }} articles</h2>
+			<h2>Panier : {{ shoppingCart }} articles</h2>
 		</aside>
 
 		<h2>Contactez nous</h2>
