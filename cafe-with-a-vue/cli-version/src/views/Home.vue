@@ -23,7 +23,7 @@
 		</section>
 
 		<div class="shopping-cart">
-			<h2>Panier: {{ shoppingCart }} articles</h2>
+			<h2>Panier : {{ shoppingCart }} articles</h2>
 		</div>
 
 		<footer class="footer">
@@ -42,7 +42,7 @@ export default {
 	},
 	data() {
 		return {
-			restaurantName: "La belle vue",
+			restaurantName: "Le belle vue",
 			shoppingCart: 0,
 			simpleMenu: [
 				{
